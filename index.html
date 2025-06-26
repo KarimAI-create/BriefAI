@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreatorBrief AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // or 'media'
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              DEFAULT: 'rgb(59, 130, 246)', // blue-500
+              light: 'rgb(96, 165, 250)', // blue-400
+              dark: 'rgb(37, 99, 235)',  // blue-600
+            },
+            secondary: {
+              DEFAULT: 'rgb(16, 185, 129)', // emerald-500
+              light: 'rgb(52, 211, 153)', // emerald-400
+              dark: 'rgb(5, 150, 105)',   // emerald-600
+            },
+            neutral: {
+              light: 'rgb(243, 244, 246)', // gray-100
+              DEFAULT: 'rgb(209, 213, 219)', // gray-300
+              dark: 'rgb(55, 65, 81)', // gray-700
+              darker: 'rgb(31, 41, 55)', // gray-800
+              darkest: 'rgb(17, 24, 39)', // gray-900
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.523.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-neutral-light dark:bg-neutral-darkest text-neutral-darker dark:text-neutral-light font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
